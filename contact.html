@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt="logo" height="75"></a>
+            <ul>
+                <li class="link"><a href="index.html">home</a></li>
+                <li class="link"><a href="history.html">history</a></li>
+                <li class="link"><a href="products.html">products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="thankyou.html">
+            <p>Please fill out this information</p>
+            <p>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+            </p>
+            <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="how-you-heard">How did you hear about us?</label>
+                <select name="how-you-heard" id="how-you-heard">
+                    <option value="web">Website</option>
+                    <option value="ad">Advertisement</option>
+                    <option value="socialmedia">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="4" cols="49"></textarea>
+            </p>
+            <p class="radio-buttons">
+                <label for="mailing">Would you like to receive emails from us?</label>
+                <input type="radio" name="mailing" value="Yes" checked>Yes
+                <input type="radio" name="mailing" value="No">No
+
+            </p>
+            
+            <p class="radio-buttons">
+                <label for="quantity">How often would you like to hear from us?</label>
+                <input type="radio" name="quantity" value="daily" checked>Every day
+                <input type="radio" name="quantity" value="weekly"> Once a week
+                <input type="radio" name="quantity" value="monthly"> Just once a month
+            
+            </p>
+            
+            <p class="checkbox">
+                <label for="type">What types of things should we send you?</label>
+                <input type="checkbox" name="type" value="everything" checked>Send me everything
+                <input type="checkbox" name="type" value="news">News
+                <input type="checkbox" name="type" value="products">New products
+                <input type="checkbox" name="type" value="sales">Sales
+            
+            </p>
+            
+            <p>
+                <label></label>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://www.chanel.com/us/" target="_blank" class="link">shop now</a>
+    </footer>
+
+</body>
+</html>
