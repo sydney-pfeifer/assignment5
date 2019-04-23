@@ -4,6 +4,8 @@ html {
     color: #ccc;
 }
 
+a:hover {color: darkgray}
+
 body {
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../images/background.jpg);
@@ -27,14 +29,16 @@ main {
     color: #bfbebe;
     font-size: 1.5em;
     font-family: monospace;
-    background-color: #717171
+    background-color: rgba(113, 113, 113, 0.72);
+    display: flex;
+    width: 1100px
 }
 
 #quote {
     color: aliceblue;
-    background-color: darkgray;
+    background-color: rgba(82, 76, 76, 0.7);
     font-family: cursive;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 body nav ul li a {
@@ -66,12 +70,19 @@ h2 {
 }
 
 h1 {
-    border: 2px solid #000000;
-    border-radius: 15px;
-    width: 300px;
-    background-color: #bbbbbb;
-
+    font-size: 4em;
     box-shadow: 5px 5px 5px #5a5a5a;
+    text-transform: uppercase;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
 .link {
@@ -109,7 +120,7 @@ footer {
 @media screen and (max-width: 30rem) {
     header,
     main,
-    footer
+    footer,
     form p {
         flex-direction: column;
     }
